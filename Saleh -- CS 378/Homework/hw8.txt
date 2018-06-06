@@ -1,0 +1,66 @@
+1) What are the key differences between IaaS and PaaS models of cloud computing?
+
+2) Consider a developer's workflow where a developer is developing their web application code.
+   During the development phase, one needs to deploy the work-in-progress code often.
+   What cloud computing model is suitable for this workflow. Why?
+
+3) Consider an operator's workflow where the operator needs to deploy an already built
+   web application to production. What cloud computing model is suitable
+   for this workflow. Why?
+
+4) Consider the IaaS model of cloud computing such as Amazon EC2 which allows spinning
+   up Virtual Machines in the cloud. Define a REST API to support following operations:
+   - Spin up a virtual machine
+   - Get information about a spawned virtual machine
+   - Stop a spawned virtual machine
+   - Delete a spawned virtual machine
+
+5) Consider your assignment 6. Suppose you have set the level of Logger and Handler
+   to WARNING. Show the output that will be generated for each of the following calls:
+   - Logger.info("Web App is starting up")
+   - Logger.config("Web App configuration is a.b.c")
+   - Logger.severe("Something severe has happened")
+
+6) Considering the Java logging architecture, what message level would you assign to
+   following situations that may happen in your program:
+   - Trace message of the program execution that should be displayed only when debugging an issue
+   - Exception stack trace
+   - Displaying the database credentials that would be used to connect to a database
+
+7) Consider an HTML page as shown below:
+
+<html>
+<body>
+<div id="myDiv">
+  <p id="myP">Click this paragraph</p>
+</div><br>
+
+<script>
+document.getElementById("myP").addEventListener("click", function() {
+    alert("You clicked the P element!");
+}, false);
+
+document.getElementById("myDiv").addEventListener("click", function() {
+    alert("You clicked the DIV element!");
+}, false);
+   
+</script>
+</body>
+</html>
+
+This will show a box with the text "Click this paragraph" inside of it.
+
+What messages will be displayed and in what order when you click inside the box
+on the "Click this paragraph" text.
+
+
+8) Answer whether following URL pairs satisfy same origin policy or not:
+   a) http://www.abc.com/
+      http://www.abc-1.com/
+
+   b) https://www.s3.com/
+      https://www.s3.com:445/
+
+   c) http://www.cs.utexas.edu/
+      http://www.cs.utexas.edu/~devdatta
+

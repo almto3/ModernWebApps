@@ -1,0 +1,32 @@
+1) What is the meaning of @Entity annotation in Hibernate?
+
+2) What is the purpose of transaction when using Hibernate to interact with
+   the database?
+
+3) In hw6, you defined an email system that allowed tagging individual emails.
+   Now consider that we want to model the feature that an email can contain 
+   zero or more attachments. Using Hibernate, write Entity classes 
+   to model this scenario.
+
+4) Using Hibernate, write following queries:
+   - Insert an email with one subject and two attachments
+     (subject: "Finals", attachment names: "Study material", "class notes")
+   - Query all the attachment names for a given email subject.
+
+5) Explain with examples meaning of the following annotations:
+   - @ManyToOne, @JoinColumn, @OneToMany(mappedBy="..."), @Column, @Id
+
+6) True or False
+   - A detached object is an object that was associated with a session 
+     some time in its lifetime.
+   - In a REST API, the object into which the input XML is unmarshalled is
+     a transient object.
+   - Bind parameters are important when using Hibernate.
+   - Bind parameters are only relevant and useful in JDBC.
+   - Many-to-one annotation should be included on the parent entity
+     in the relationship.
+   - The owning side of the relationship is the entity that has reference 
+     to the other entity.
+   - Hibernate entities can be used to represent input/output objects as well
+     by using JAXB annotations along side Hibernate annotations
+     on entity classes.

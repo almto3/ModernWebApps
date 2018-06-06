@@ -1,0 +1,34 @@
+1. Try test-load-on-startup Servlet project from class github repository
+   - Change the values of <load-on-startup> attribute in web.xml for
+     both the Servlets to understand how Servlet startup behavior is
+     affected by the specified values.
+   - Answer following questions:
+     - What is the output of deploying the project when "load-on-startup"
+       for testingLoadOnStartup2 is set to 2 whereas the "load-on-startup"
+       for testingLoadOnStartup1 is set to 1
+     - What happens when we omit load-on-startup from both Servlet definitions
+     - What is the init-param attribute in web.xml?
+     - What is the context-param attribute in web.xml?
+     - What is the difference between init-param and context-param attributes?
+
+2. Try spring-email-service Servlet project
+   - Execute following queries:
+     - http://localhost:8080/spring-email-service/
+     - http://localhost:8080/spring-email-service/?action=compose
+     - http://localhost:8080/spring-email-service/calculator?values=1,4,5&operator=add
+     - http://localhost:8080/spring-email-service/calculator?values=1,4,5&operator=multiply
+
+   - Study EmailController.java and read about following annotations:
+     - @RequestMapping, @RequestHeader, @RequestParam, @ResponseBody, @Controller
+
+   - What is dependency injection? What dependency injection method is used in spring-email-service?
+
+   - How are dependencies specified in Spring?
+
+   - What are advantages of using an interface instead of concrete implementation when building
+     our programs?
+
+   - What is a Java Bean? How are Java beans used in dependency injection? 
+
+
+

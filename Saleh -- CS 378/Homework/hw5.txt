@@ -1,0 +1,37 @@
+1. What is the meaning of context-param element in web.xml?
+
+2. What is the meaning of init-param element in web.xml?
+
+3. What are similarities and differences between context-param and init-param
+
+4. Spring, RESTEasy, Servlets are examples of which of the following:
+   (a) abstractions
+   (b) frameworks
+   (c) tools
+   (d) all of the above
+
+5. What is the purpose of getClasses() and getSingletons() methods 
+   in a RESTEasy application class?
+
+6. When a POST request is received by a REST application, the RESTEasy
+   framework uses a specific technique to convert the XML body of POST
+   request into a Java object. What is this technique called?
+   
+7. When designing a REST API, what are some of questions/concerns that should
+   be kept in mind?
+
+8. One of the reasons Internet is so popular is that we can navigate from one
+   web page to another by following the links available on a page.
+   In designing REST APIs, is it a good idea to provide such links?
+   What REST principle can we use to inform our decision?
+
+9. True or False: 
+   - When a dependency is changed, functional tests need to be updated.
+   - Functional testing is focused on testing the functional behavior of
+     methods within the code.
+   - Unit testing and functional testing are both required for ensuring
+     software robustness
+   - An example of idempotent sequence of REST methods is <PUT, PUT>
+   - PATCH is a REST method that allows conditional updates to REST resources
+
+

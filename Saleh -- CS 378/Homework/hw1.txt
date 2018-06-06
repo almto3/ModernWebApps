@@ -1,0 +1,27 @@
+1) Consider the url http://canvas.utexas.edu
+   Run following commands and observe the difference between their responses:
+   - curl -v -X HEAD http://canvas.utexas.edu
+   - curl -v -X HEAD http://canvas.utexas.edu -H "Pragma: no-cache" -H "Cache-Control: max-age=0, no-cache, must-revalidate"
+   Experiment with different sites and try to find more sites for which you observe the caching behavior similar to the canvas site.
+
+2) Run following commands and observe their effect on the response:
+   - curl -v http://www.cs.utexas.edu/~devdatta/test-file.txt
+   - curl -v http://www.cs.utexas.edu/~devdatta/test-file.txt -H "If-Modified-Since: Tue, 30 Aug 2016 17:51:08 GMT"
+   - curl -v http://www.cs.utexas.edu/~devdatta/test-file.txt -H "If-Modified-Since: Tue, 29 Aug 2016 17:51:08 GMT"
+   - curl -v http://www.cs.utexas.edu/~devdatta/test-file.txt -H "If-Modified-Since: Tue, 31 Aug 2016 17:51:08 GMT"
+   - curl -v http://www.cs.utexas.edu/~devdatta/test-file.txt -H "If-None-Match: \"17a1e7f-6-53b4da01d1629\""
+   - curl -v http://www.cs.utexas.edu/~devdatta/test-file.txt -H "If-Match: \"17a1e7f-6-53b4da01d1629\""
+
+3) Find a site that sends back "Transfer-Encoding: chunked" response header. 
+   Calculate the size of the content by considering each chunk. 
+   Tally it with the size of the content by measuring it independently (using other means such as Unix word count (wc) command)
+
+4) Interact with 5 different sites/urls of your choosing using either curl (or other tools that we discussed in class)
+   Make a histogram of response headers (essentially how many sites included each header).
+   - Which headers were sent by all sites? Which headers were unique to two or more sites?
+
+5) Read about following headers from the RFCs:
+   - Accept-Ranges, Range-Request, Age, max-age, no-store
+
+6) Try out all the programs from HTTP directory in:
+   - https://github.com/devdattakulkarni/ModernWebApps

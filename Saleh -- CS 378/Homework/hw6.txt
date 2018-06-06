@@ -1,0 +1,43 @@
+1) What is the difference between primary key and foreign key?
+
+2) What is the difference between natural key and surrogate key?
+
+3) What are some of the advantages of using a natural key as the primary key in a table?
+
+4) What are some of the advantages of using a surrogate key as the primary key in a table?
+
+5) What are bind parameters in context of JDBC?
+
+6) Why is it important to use PreparedStatement with bind parameters when using JDBC? Give precise answer.
+
+7) Consider that we are building an email system in which we want to support a feature where we can attach
+   arbitrary tags to emails. An email can have multiple tags and multiple emails can have the same tag.
+   For example, consider following three emails with subject and tags.
+   Subject               Tags
+   Assignment 6          UT, Modern Web apps
+   Study group           UT
+   Black Friday          Shopping
+
+   Define tables with appropriate columns to enable following queries:
+   - Find all emails corresponding to a specific tag
+   - Find all tags for a particular email
+
+8) Using JDBC write following queries:
+   - Insert an email with following subject and tag ("Finals", "UT")
+   - Query email subjects that have the tag "UT"
+
+9) Explain with an example what is a transaction?
+
+10) What mechanism is available in JDBC to obtain the primary key id of an inserted row?
+
+11) What is the difference between executeUpdate and executeQuery JDBC methods?
+
+12) Explain with examples the following - inner join, left outer join, right outer join
+
+13) True or False
+    - JDBC code should be added in resource layer when designing a REST API
+    - A datasource in JDBC is the place where data is stored
+    - We used web.xml to pass JDBC connection parameters to our program so that
+      it made the program independent of the specific database used.
+
+

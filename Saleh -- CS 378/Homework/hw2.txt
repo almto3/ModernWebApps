@@ -1,0 +1,35 @@
+1. Run following examples from Servlets directory: hello-world, query-parameters, session-example, test-jsoup-1
+   - https://github.com/devdattakulkarni/ModernWebApps/Servlets
+
+2. Run examples from XMLParsing directory
+
+3. Modify the HelloServlet code to generate a "Last-Modifed" response header.
+
+4. Modify/update the code in question 3 to handle "If-Modified-Since" request header.
+   You can store the "Last-Modifed" timestamp of the helloworld resource in a HashTable/HashMap.
+   Make calls to your Servlet by passing in different values for the "If-Modified-Since" request header.
+
+5. Experiment with using combination of If-Modified-Since and If-None-Match request headers
+   against a site of your choosing. Determine through experimentation which header takes precedence.
+
+6. Consider a University network where all the network traffic goes through a University-wide
+   proxy server which implements caching according to HTTP 1.0 and 1.1.
+   Suppose that a user makes request to resource (r1) and the response sent by the origin server
+   for that resource has a Cache-control header with max-age: 10
+   Suppose another user makes request to the same resource after two minutes, what will happen?
+   Suppose a user wants to ensure that the response is only received from the origin server. 
+   How can this be achieved?
+
+7. Explain what is a strong validator? Use examples to explain.
+
+8. Answer true or false: 
+   (a) If-None-Match request header is a way for the client to control when new ETag value is calculated
+       by the server
+   (b) The reason for the origin server to include both Expires header and the max-age directive in its response 
+       is to allow proxy servers that understand HTTP 1.1 longer expiration time for that resource by specifying 
+       the max-age value that is greater than the time included in the Expires header.
+
+9. Explain what is Transfer-encoding response header.
+
+10. Suppose server wants to send a HTML page whose size is 48 bytes, and suppose each chunk can only accommodate 16 bytes.
+    Show the server's response.
